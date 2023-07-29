@@ -1,0 +1,380 @@
+plugins/arctic2-raw.c:28:16: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ arctic2_evt = alloca(sizeof(*arctic2_evt) * nr);
+               ^
+plugins/collie-raw.c:27:15: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ collie_evt = alloca(sizeof(*collie_evt) * nr);
+              ^
+plugins/corgi-raw.c:27:14: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ corgi_evt = alloca(sizeof(*corgi_evt) * nr);
+             ^
+plugins/cy8mrln-palmpre.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 32 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+plugins/cy8mrln-palmpre.c:515:12: style: Variable 'max_x' is assigned a value that is never used. [unreadVariable]
+ int max_x = 0, max_y = 0, max_value = 0, x, y;
+           ^
+plugins/cy8mrln-palmpre.c:515:23: style: Variable 'max_y' is assigned a value that is never used. [unreadVariable]
+ int max_x = 0, max_y = 0, max_value = 0, x, y;
+                      ^
+plugins/cy8mrln-palmpre.c:515:38: style: Variable 'max_value' is assigned a value that is never used. [unreadVariable]
+ int max_x = 0, max_y = 0, max_value = 0, x, y;
+                                     ^
+plugins/debounce.c:60:11: style: Variable 'drop' is assigned a value that is never used. [unreadVariable]
+ int drop = 0;
+          ^
+plugins/dmc-raw.c:107:13: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+   if ((ret = read(ts->fd, buf, 4)) != 4) {
+            ^
+plugins/evthres.c:335:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  fprintf(stderr, "EVTHRES: size exceeds maximum of %d\n", max);
+  ^
+plugins/evthres.c:378:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("Using default size of %d\n", c->size);
+  ^
+plugins/galax-raw.c:96:7: style: The scope of the variable 'keybit' can be reduced. [variableScope]
+ long keybit[BITS_TO_LONGS(KEY_CNT)];
+      ^
+plugins/galax-raw.c:199:10: style: Variable 'total' is assigned a value that is never used. [unreadVariable]
+   total = -1;
+         ^
+plugins/h3600-raw.c:28:14: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ h3600_evt = alloca(sizeof(*h3600_evt) * nr);
+             ^
+plugins/input-evdev-raw.c:134:6: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int j, k;
+     ^
+plugins/input-evdev-raw.c:134:9: style: The scope of the variable 'k' can be reduced. [variableScope]
+ int j, k;
+        ^
+plugins/input-raw.c:474:7: style: Redundant initialization for 'ret'. The initialized value is overwritten before it is read. [redundantInitialization]
+  ret = total;
+      ^
+plugins/input-raw.c:348:10: note: ret is initialized
+ int ret = nr;
+         ^
+plugins/input-raw.c:474:7: note: ret is overwritten
+  ret = total;
+      ^
+plugins/input-raw.c:206:6: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int j, k;
+     ^
+plugins/input-raw.c:206:9: style: The scope of the variable 'k' can be reduced. [variableScope]
+ int j, k;
+        ^
+plugins/linear-h2200.c:62:7: style: The scope of the variable 'x' can be reduced. [variableScope]
+ long x, y, new_x, new_y;
+      ^
+plugins/linear-h2200.c:62:10: style: The scope of the variable 'y' can be reduced. [variableScope]
+ long x, y, new_x, new_y;
+         ^
+plugins/linear-h2200.c:62:13: style: The scope of the variable 'new_x' can be reduced. [variableScope]
+ long x, y, new_x, new_y;
+            ^
+plugins/linear-h2200.c:62:20: style: The scope of the variable 'new_y' can be reduced. [variableScope]
+ long x, y, new_x, new_y;
+                   ^
+plugins/linear.c:345:8: warning: %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+  if (!fscanf(pcal_fd, "%d %d", &lin->cal_res_x, &lin->cal_res_y))
+       ^
+plugins/linear.c:345:8: warning: %d in format string (no. 2) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+  if (!fscanf(pcal_fd, "%d %d", &lin->cal_res_x, &lin->cal_res_y))
+       ^
+plugins/linear.c:349:8: warning: %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+  if (!fscanf(pcal_fd, "%d", &lin->rot)) {
+       ^
+plugins/linear.c:355:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("LINEAR: Reading rotation %d from calibfile\n",
+   ^
+plugins/median.c:384:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  fprintf(stderr, "MEDIAN: depth exceeds maximum of %d\n", max);
+  ^
+plugins/mk712-raw.c:28:14: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ mk712_evt = alloca(sizeof(*mk712_evt) * nr);
+             ^
+plugins/one-wire-ts-input-raw.c:28:6: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ int ret, i;
+     ^
+plugins/one-wire-ts-input-raw.c:60:13: style: Variable 'max_slots' is assigned a value that is never used. [unreadVariable]
+  max_slots = 1;
+            ^
+plugins/pthres.c:45:13: style: The scope of the variable 'xsave' can be reduced. [variableScope]
+ static int xsave, ysave;
+            ^
+plugins/pthres.c:45:20: style: The scope of the variable 'ysave' can be reduced. [variableScope]
+ static int xsave, ysave;
+                   ^
+plugins/pthres.c:46:13: style: The scope of the variable 'press' can be reduced. [variableScope]
+ static int press;
+            ^
+plugins/skip.c:397:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+plugins/skip.c:148:20: style: Variable 'count_current' is assigned a value that is never used. [unreadVariable]
+ int count_current = 0;
+                   ^
+plugins/tatung-raw.c:32:15: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ tatung_evt = alloca(sizeof(*tatung_evt) * nr_samples);
+              ^
+plugins/touchkit-raw.c:138:8: style: Variable 'samp' is assigned a value that is never used. [unreadVariable]
+   samp++;
+       ^
+plugins/ucb1x00-raw.c:29:16: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ ucb1x00_evt = alloca(sizeof(*ucb1x00_evt) * nr);
+               ^
+plugins/variance.c:325:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+plugins/waveshare-raw.c:115:8: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ buf = alloca(i->len * nr);
+       ^
+plugins/waveshare-raw.c:235:8: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+ buf = alloca(i->len * nr);
+       ^
+src/ts_close.c:38:10: style: Variable 'handle' is assigned a value that is never used. [unreadVariable]
+  handle = info->handle;
+         ^
+src/ts_config.c:205:10: style: Variable 'handle' is assigned a value that is never used. [unreadVariable]
+  handle = info->handle;
+         ^
+src/ts_config.c:131:19: warning: Either the condition 'p' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+     module_name, p);
+                  ^
+src/ts_config.c:134:28: note: Assuming that condition 'p' is not redundant
+    if (conffile_params && p)
+                           ^
+src/ts_config.c:131:19: note: Null pointer dereference
+     module_name, p);
+                  ^
+src/ts_config.c:149:19: warning: Either the condition 'p' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+     module_name, p);
+                  ^
+src/ts_config.c:152:28: note: Assuming that condition 'p' is not redundant
+    if (conffile_params && p)
+                           ^
+src/ts_config.c:149:19: note: Null pointer dereference
+     module_name, p);
+                  ^
+src/ts_load_module.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 36 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/ts_load_module.c:263:50: style:inconclusive: Function 'ts_load_module' argument 2 names different: declaration 'mod' definition 'module'. [funcArgNamesDifferent]
+int ts_load_module(struct tsdev *ts, const char *module, const char *params)
+                                                 ^
+src/tslib.h:171:54: note: Function 'ts_load_module' argument 2 names different: declaration 'mod' definition 'module'.
+TSAPI int ts_load_module(struct tsdev *, const char *mod, const char *params);
+                                                     ^
+src/ts_load_module.c:263:50: note: Function 'ts_load_module' argument 2 names different: declaration 'mod' definition 'module'.
+int ts_load_module(struct tsdev *ts, const char *module, const char *params)
+                                                 ^
+src/ts_load_module.c:268:38: style:inconclusive: Function 'ts_load_module_raw' argument 1 names different: declaration 'dev' definition 'ts'. [funcArgNamesDifferent]
+int ts_load_module_raw(struct tsdev *ts, const char *module, const char *params)
+                                     ^
+src/tslib-private.h:40:38: note: Function 'ts_load_module_raw' argument 1 names different: declaration 'dev' definition 'ts'.
+int ts_load_module_raw(struct tsdev *dev, const char *module, const char *params);
+                                     ^
+src/ts_load_module.c:268:38: note: Function 'ts_load_module_raw' argument 1 names different: declaration 'dev' definition 'ts'.
+int ts_load_module_raw(struct tsdev *ts, const char *module, const char *params)
+                                     ^
+src/ts_load_module.c:249:10: style: Variable 'handle' is assigned a value that is never used. [unreadVariable]
+  handle = info->handle;
+         ^
+src/ts_open.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/ts_open.c:64:35: style:inconclusive: Function 'ts_open' argument 1 names different: declaration 'dev_name' definition 'name'. [funcArgNamesDifferent]
+struct tsdev *ts_open(const char *name, int nonblock)
+                                  ^
+src/tslib.h:176:41: note: Function 'ts_open' argument 1 names different: declaration 'dev_name' definition 'name'.
+TSAPI struct tsdev *ts_open(const char *dev_name, int nonblock);
+                                        ^
+src/ts_open.c:64:35: note: Function 'ts_open' argument 1 names different: declaration 'dev_name' definition 'name'.
+struct tsdev *ts_open(const char *name, int nonblock)
+                                  ^
+src/ts_read.c:44:66: style:inconclusive: Function 'ts_read_mt' argument 3 names different: declaration 'slots' definition 'max_slots'. [funcArgNamesDifferent]
+int ts_read_mt(struct tsdev *ts, struct ts_sample_mt **samp, int max_slots,
+                                                                 ^
+src/tslib.h:196:66: note: Function 'ts_read_mt' argument 3 names different: declaration 'slots' definition 'max_slots'.
+TSAPI int ts_read_mt(struct tsdev *, struct ts_sample_mt **, int slots, int nr);
+                                                                 ^
+src/ts_read.c:44:66: note: Function 'ts_read_mt' argument 3 names different: declaration 'slots' definition 'max_slots'.
+int ts_read_mt(struct tsdev *ts, struct ts_sample_mt **samp, int max_slots,
+                                                                 ^
+src/ts_read.c:34:3: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  fprintf(stderr, "TS_READ----> x = %d, y = %d, pressure = %d\n",
+  ^
+src/ts_read_raw.c:33:3: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  fprintf(stderr,
+  ^
+src/ts_version.c:39:12: style: Variable 'major' is assigned a value that is never used. [unreadVariable]
+ int major = 0;
+           ^
+src/ts_version.c:40:12: style: Variable 'minor' is assigned a value that is never used. [unreadVariable]
+ int minor = 0;
+           ^
+src/ts_version.c:41:12: style: Variable 'patch' is assigned a value that is never used. [unreadVariable]
+ int patch = 0;
+           ^
+src/ts_version.c:47:0: information: Skipping configuration 'LIBTS_VERSION_CURRENT' since the value of 'LIBTS_VERSION_CURRENT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ major = LIBTS_VERSION_CURRENT - LIBTS_VERSION_AGE;
+^
+tests/fbutils-bsd.c:125:2: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ fprintf(stderr, "%d %d, %d\n", x, y, colidx);
+ ^
+tests/fbutils-bsd.c:151:12: style: The scope of the variable 'bits' can be reduced. [variableScope]
+ int i, j, bits;
+           ^
+tests/fbutils-bsd.c:107:2: warning: Size of pointer 'line_addr' used instead of size of its data. [pointerSize]
+ line_addr = malloc(sizeof(line_addr) * fb.fb_height);
+ ^
+tests/fbutils-bsd.c:298:26: style: Variable 'x2' is assigned a value that is never used. [unreadVariable]
+   tmp = x1; x1 = x2; x2 = tmp;
+                         ^
+tests/fbutils-bsd.c:313:26: style: Variable 'y2' is assigned a value that is never used. [unreadVariable]
+   tmp = y1; y1 = y2; y2 = tmp;
+                         ^
+tests/fbutils-linux.c:229:16: style: The scope of the variable 'bits' can be reduced. [variableScope]
+ int32_t i, j, bits;
+               ^
+tests/fbutils-linux.c:390:26: style: Variable 'x2' is assigned a value that is never used. [unreadVariable]
+   tmp = x1; x1 = x2; x2 = tmp;
+                         ^
+tests/fbutils-linux.c:405:26: style: Variable 'y2' is assigned a value that is never used. [unreadVariable]
+   tmp = y1; y1 = y2; y2 = tmp;
+                         ^
+tests/sdlutils.c:38:7: style: Variable 'x2' is assigned a value that is never used. [unreadVariable]
+   x2 = tmp;
+      ^
+tests/sdlutils.c:64:7: style: Variable 'y2' is assigned a value that is never used. [unreadVariable]
+   y2 = tmp;
+      ^
+tests/testutils.c:44:72: style:inconclusive: Function 'button_handle' argument 4 names different: declaration 'pressure' definition 'p'. [funcArgNamesDifferent]
+int button_handle(struct ts_button *button, int x, int y, unsigned int p)
+                                                                       ^
+tests/testutils.h:30:72: note: Function 'button_handle' argument 4 names different: declaration 'pressure' definition 'p'.
+int button_handle(struct ts_button *button, int x, int y, unsigned int pressure);
+                                                                       ^
+tests/testutils.c:44:72: note: Function 'button_handle' argument 4 names different: declaration 'pressure' definition 'p'.
+int button_handle(struct ts_button *button, int x, int y, unsigned int p)
+                                                                       ^
+tests/ts_calibrate.c:408:2: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("xres = %d, yres = %d\n", xres, yres);
+ ^
+tests/ts_calibrate.c:408:2: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("xres = %d, yres = %d\n", xres, yres);
+ ^
+tests/ts_calibrate.c:507:9: warning: %d in format string (no. 8) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  len = sprintf(cal_buffer, "%d %d %d %d %d %d %d %d %d %d",
+        ^
+tests/ts_calibrate.c:507:9: warning: %d in format string (no. 9) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  len = sprintf(cal_buffer, "%d %d %d %d %d %d %d %d %d %d",
+        ^
+tests/ts_calibrate.c:215:6: style: The scope of the variable 'nfds' can be reduced. [variableScope]
+ int nfds;
+     ^
+tests/ts_calibrate.c:430:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("ts_calibrate: time before touch press < %dms. restarting.\n",
+  ^
+tests/ts_calibrate.c:442:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("ts_calibrate: time before touch press < %dms. restarting.\n",
+  ^
+tests/ts_calibrate.c:454:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("ts_calibrate: time before touch press < %dms. restarting.\n",
+  ^
+tests/ts_calibrate.c:466:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("ts_calibrate: time before touch press < %dms. restarting.\n",
+  ^
+tests/ts_calibrate.c:478:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("ts_calibrate: time before touch press < %dms. restarting.\n",
+  ^
+tests/ts_calibrate_sdl.c:105:6: style: The scope of the variable 'nfds' can be reduced. [variableScope]
+ int nfds;
+     ^
+tests/ts_calibrate_sdl.c:272:5: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+  i = 0;
+    ^
+tests/ts_calibrate_sdl.c:275:5: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+  i = -1;
+    ^
+tests/ts_conf.c:104:10: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+   ret = scanf("%[^\n]s", buf);
+         ^
+tests/ts_conf.c:160:8: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+ ret = scanf("%s", new_filter->name);
+       ^
+tests/ts_conf.c:167:8: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+ ret = scanf("%[^\n]s", new_filter->params);
+       ^
+tests/ts_harvest.c:161:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  fprintf(output_fid, "%d\t%d\t%d\t%d\n", x, y, x_ts, y_ts);
+  ^
+tests/ts_harvest.c:161:3: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  fprintf(output_fid, "%d\t%d\t%d\t%d\n", x, y, x_ts, y_ts);
+  ^
+tests/ts_harvest.c:85:18: style: The scope of the variable 'x_incr' can be reduced. [variableScope]
+ int x_ts, y_ts, x_incr, y_incr;
+                 ^
+tests/ts_harvest.c:86:15: style: The scope of the variable 'x' can be reduced. [variableScope]
+ unsigned int x, y, xres_half, yres_half, x_new, y_new;
+              ^
+tests/ts_harvest.c:86:50: style: The scope of the variable 'y_new' can be reduced. [variableScope]
+ unsigned int x, y, xres_half, yres_half, x_new, y_new;
+                                                 ^
+tests/ts_print_mt.c:190:0: information: Skipping configuration 'TSLIB_VERSION_OPEN_RESTRICTED' since the value of 'TSLIB_VERSION_OPEN_RESTRICTED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (ver->features & TSLIB_VERSION_OPEN_RESTRICTED)
+^
+tests/ts_verify.c:148:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, j;
+     ^
+tests/ts_verify.c:148:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+tests/ts_verify.c:150:6: style: The scope of the variable 'count' can be reduced. [variableScope]
+ int count = 0;
+     ^
+tools/ts_uinput.c:603:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, j;
+     ^
+tools/ts_uinput.c:603:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+tools/ts_uinput.c:604:6: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ int ret;
+     ^
+tools/ts_uinput.c:644:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+tools/ts_uinput.c:645:6: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ int ret;
+     ^
+tools/ts_uinput.c:710:6: style: The scope of the variable 'fd' can be reduced. [variableScope]
+ int fd;
+     ^
+tools/ts_uinput.c:712:6: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ int ret;
+     ^
+tools/ts_uinput.c:952:7: style: Local variable 'ret' shadows outer variable [shadowVariable]
+  int ret = ioctl(data.fd_uinput,
+      ^
+tools/ts_uinput.c:778:6: note: Shadowed declaration
+ int ret;
+     ^
+tools/ts_uinput.c:952:7: note: Shadow variable
+  int ret = ioctl(data.fd_uinput,
+      ^
+tools/ts_uinput.c:1002:7: style: Local variable 'ret' shadows outer variable [shadowVariable]
+  int ret = ioctl(data.fd_uinput,
+      ^
+tools/ts_uinput.c:778:6: note: Shadowed declaration
+ int ret;
+     ^
+tools/ts_uinput.c:1002:7: note: Shadow variable
+  int ret = ioctl(data.fd_uinput,
+      ^
+tests/ts_print_mt.c:92:0: style: The function 'openfn' is never used. [unusedFunction]
+
+^
+src/ts_option.c:22:0: style: The function 'ts_option' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
